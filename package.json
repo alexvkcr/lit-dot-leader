@@ -1,0 +1,24 @@
+{
+  "name": "lit-dot-leader",
+  "version": "1.0.0",
+  "description": "Lit Element Component for dot-leader'ed text",
+  "main": "lit-dot-leader.js",
+  "dependencies": {
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "polymer serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexvkcr/lit-dot-leader.git"
+  },
+  "author": "Alex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexvkcr/lit-dot-leader/issues"
+  },
+  "homepage": "https://github.com/alexvkcr/lit-dot-leader#readme"
+}
