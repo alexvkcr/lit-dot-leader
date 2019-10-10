@@ -1,3 +1,3 @@
 # lit-dot-leader
 
-Lit Element Component for dot leader text
+Lit Element Component for dot-leader'ed text
