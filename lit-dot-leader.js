@@ -34,11 +34,11 @@ class LitDotLeader extends LitElement {
       }
   ul.leaders span:first-child {
       padding-right: 0.33em;
-      background: white}
+      background: inherit}
   ul.leaders span + span {
       float: right;
       padding-left: 0.33em;
-      background: white;
+      background: inherit;
       position: relative;
       z-index: 1}`];
   }

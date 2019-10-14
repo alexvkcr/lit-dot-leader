@@ -5,12 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .menu{
+      width: 35vw;
+      margin: 10px auto;
+      background: lightsteelblue;
+      border: 1px solid grey;
+    }
+    .menu h3{
+      text-align: center;
+    }
+    .menu .list{
+      margin: 10px 30px;
+    }
+    
+  </style>
 </head>
 <body>
-  <lit-dot-leader 
-    lines='[{"text": "Chocolate Smoothie", "price": "30$"},
-          {"text": "Vanilla Smoothie", "price": "130$"}]'>
-  </lit-dot-leader>
+  <div class="menu">
+    <h3>Desserts of the day</h3>
+    <div class="list">
+      <lit-dot-leader 
+        lines='[{"text": "Chocolate Smoothie", "price": "30$"},
+              {"text": "Chocolate Smoothie with drops of unicorn tears and fried marshmallow slices, boiled for fifty minutes in a stone oven brought from Constantinople ", "price": "300$"},
+              {"text": "Vanilla Smoothie", "price": "130$"}]'>
+      </lit-dot-leader>
+    </div>
+  </div>
 
   <script type="module" src="./lit-dot-leader.js"></script>
 </body>
