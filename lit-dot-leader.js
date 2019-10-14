@@ -3,7 +3,7 @@ import { LitElement, html, unsafeCSS} from 'lit-element';
 class LitDotLeader extends LitElement {
   
   static get properties() { return {
-    lines: { type: Array },/*This property stores an array that has an entry for each line that you want to have 'dot-leadered'
+    lines: { type: Array },/*This property stores an array that has an entry for each line that you want to have "dot-leader'ed"
                           Every entry will have two values, the text, and the price*/
     separator: {type: String }/*This sets up what will be the character to type in separate the text and price*/
   }}  
@@ -11,7 +11,7 @@ class LitDotLeader extends LitElement {
   constructor() {
     super();
     this.lines = [{text:'Loren Ipsum',
-                  price:'99€'}];
+                  price:'0.00€'}]
     this.separator='.'
   }
 
