@@ -18,6 +18,9 @@
     .menu .list{
       margin: 10px 30px;
     }
+    lit-dot-leader{
+      --lit-dot-leader-background: lightsteelblue;
+    }
     
   </style>
 </head>
@@ -28,7 +31,8 @@
       <lit-dot-leader 
         lines='[{"text": "Chocolate Smoothie", "price": "30$"},
               {"text": "Chocolate Smoothie with drops of unicorn tears and fried marshmallow slices, boiled for fifty minutes in a stone oven brought from Constantinople ", "price": "300$"},
-              {"text": "Vanilla Smoothie", "price": "130$"}]'>
+              {"text": "Vanilla Smoothie", "price": "130$"}]'
+        separator='.'>
       </lit-dot-leader>
     </div>
   </div>
