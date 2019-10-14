@@ -1,4 +1,4 @@
-import { LitElement, html, unsafeCSS} from 'lit-element';
+import { LitElement, html, css, unsafeCSS} from 'lit-element';
 
 class LitDotLeader extends LitElement {
   
@@ -16,9 +16,14 @@ class LitDotLeader extends LitElement {
   }
 
   static get styles() {
-    return [ unsafeCSS`
+    return [ css`
+    :host{
+      --lit-dot-leader-width: 100%;
+      --lit-dot-leader-light-padding: 0.33em;
+      --lit-dot-leader-background: white;
+    }
     ul.leaders {
-      max-width: 100%;
+      max-width: var(--lit-dot-leader-width, 100%);
       padding: 0;
       overflow-x: hidden;
       list-style: none}
@@ -27,18 +32,18 @@ class LitDotLeader extends LitElement {
       width: 0;
       white-space: nowrap;
       content:
-      "................................................................................................................................................................"
-      "................................................................................................................................................................"
-      "................................................................................................................................................................"
-      "................................................................................................................................................................"
+        "................................................................................................................................................................"
+        "................................................................................................................................................................"
+        "................................................................................................................................................................"
+        "................................................................................................................................................................"
       }
   ul.leaders span:first-child {
-      padding-right: 0.33em;
-      background: inherit}
+      padding-right: var(--lit-dot-leader-light-padding, 0.33em);
+      background: var(--lit-dot-leader-background, white)}
   ul.leaders span + span {
       float: right;
-      padding-left: 0.33em;
-      background: inherit;
+      padding-left: var(--lit-dot-leader-light-padding, 0.33em);
+      background: var(--lit-dot-leader-background, white);
       position: relative;
       z-index: 1}`];
   }
