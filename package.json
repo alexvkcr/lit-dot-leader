@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Lit Element Component for dot-leader'ed text",
   "main": "lit-dot-leader.js",
+  "module": "lit-dot-leader.js",
   "dependencies": {
     "lit-element": "^2.2.1"
   },
